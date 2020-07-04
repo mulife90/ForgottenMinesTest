@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:ForgottenMinesTest.ViewModels"
+             xmlns:local="clr-namespace:ForgottenMinesTest.ViewModels;assembly=ForgottenMinesTest.ViewModels"
+             x:Class="ForgottenMinesTest.Views.EmbeddedExpanderPage"
+             Title="Forgotten Mines Test">
+
+
+    <ContentPage.BindingContext>
+        <viewmodels:ViewModel />
+    </ContentPage.BindingContext>
+
+
+
+  
+    
+    
+
+    <ScrollView x:Name="MainViewScroll">
+        <Grid Margin="100,50,100,100"
+              x:Name="MainGrid">
+
+
+            <Grid Margin="50,50,50,0"
+                  x:Name="MainGrid11">
+
+                <Grid x:Name="MainGrid12" >
+
+
+                    <Expander BackgroundColor="White"
+                              x:Name="FirstExpander"
+                              Tapped="OnTapFirstExpander">
+
+                        <Expander.Header>
+                            <Grid x:Name="MainGrid14"
+                                  BackgroundColor="Transparent">
+                                <Grid.RowDefinitions>
+
+                                    <RowDefinition Height="5*" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*" />
+
+                                </Grid.ColumnDefinitions>
+
+                                <Grid x:Name="MainGrid15"
+                                      
+                                      ColumnSpacing="-5"
+                                      Padding="0,0,0,10">
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="30" />
+
+
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+
+
+
+
+
+
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <AbsoluteLayout x:Name="absoluteLayout1"
+                                                    Grid.Column="0"
+                                                    AbsoluteLayout.LayoutBounds=".5,.5,-1,-1"
+                                                    Grid.Row="0">
+                                    <Grid x:Name="MainGrid16" HeightRequest="30"
+                                          >
+                                                 <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid19"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label x:Name="Node1CurrencyParameter"  Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="269"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding currencyyparameter}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                       
+
+
+                                    </Grid>
+                                        
+                                    </AbsoluteLayout>
+                                    
+                                    <AbsoluteLayout x:Name="absoluteLayout12"
+                                                    Grid.Column="1"
+                                                    AbsoluteLayout.LayoutBounds=".5,.5,-1,-1"
+                                                    Grid.Row="0">
+
+                                        <Grid x:Name="MainGrid110"
+                                          Grid.Column="1"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid112"
+                                              
+                                              BackgroundColor="White">
+                                                <Grid.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="OnAlertYesNoClicked"
+                                                                          NumberOfTapsRequired="1" />
+
+
+                                                </Grid.GestureRecognizers>
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid113"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="269"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding MarketParameter}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    </AbsoluteLayout>
+
+
+                                    <AbsoluteLayout x:Name="absoluteLayout13"
+                                                    Grid.Column="2"
+                                                    AbsoluteLayout.LayoutBounds=".5,.5,-1,-1"
+                                                    Grid.Row="0">
+                                        <Grid x:Name="MainGrid114"
+                                          Grid.Column="2"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid116"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid117"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="269"
+                                                       BackgroundColor="#00B0F0"
+                                                           Text="{Binding Result}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    </AbsoluteLayout>
+
+
+                                    <Grid x:Name="MainGrid118"
+                                          Grid.Column="3"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid120"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid121"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="269"
+                                                       BackgroundColor="White"
+                                                       Text=""
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+                                </Grid>
+
+                                
+                                <Grid x:Name="MainGrid122"
+                                      BackgroundColor="White"
+                                      ColumnSpacing="-5"
+                                      Padding="0,-12,0,0"
+                                      Margin="0,38,0,0"
+                                      HeightRequest="150">
+
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="100" />
+
+
+
+                                    </Grid.RowDefinitions>
+                                    
+                                    
+                                    <Grid x:Name="MainGrid123"
+                                          Grid.Row="0">
+
+                                        <BoxView BackgroundColor="Black" />
+
+
+
+                                        <Grid x:Name="MainGrid124"
+                                              BackgroundColor="White"
+                                              Margin="2">
+                                            <Label Margin="0"
+                                                   WidthRequest="1064"
+                                                   BackgroundColor="White"
+                                                   HorizontalOptions="Center"
+                                                   HorizontalTextAlignment="Center" />
+                                        </Grid>
+
+
+                                    </Grid>
+                                    
+                                    
+                                    <Grid x:Name="MainGrid1223" >
+                                        
+                                        
+                                    <Grid>
+                                        <Label Text="Some Strategy"
+                                               TextColor="Black"
+                                               Margin="2,0,0,0"
+                                               WidthRequest="140"
+                                               HeightRequest="25"
+                                               BackgroundColor="#FFC000"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               x:Name="Frame1Strategy" />
+
+                                    </Grid>
+                                        
+                                        
+                                    <Grid x:Name="MainGrid125">
+                                        <ImageButton Margin="10,20,0,0"
+                                                     WidthRequest="30"
+                                                     HeightRequest="30"
+                                                     Source="expanderbutton.png"
+                                                     VerticalOptions="CenterAndExpand"
+                                                     HorizontalOptions="Start"
+                                                     Clicked="OnButton1Clicked"
+                                                     x:Name="button1" />
+
+                                            <Grid >
+                                                <AbsoluteLayout Margin="250,35,0,0"
+                                                                x:Name="FisrtNodeCurrencyInput">
+                                                <Label
+                                                   TextColor="Black"
+                                                           Text="{Binding InputCurrency}"
+                                                   WidthRequest="140"
+                                                   HeightRequest="25"
+                                                       BackgroundColor="#EAFAB8"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="Start"
+                                                   x:Name="CurrencyInput" />
+                                            </AbsoluteLayout>
+                                            </Grid>
+
+                                        </Grid>
+                                        
+                                        
+                                    </Grid>
+
+                                </Grid>
+                               
+
+                            </Grid>
+
+
+                        </Expander.Header>
+
+
+                    </Expander>
+
+
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Margin="70,175,0,0"
+                  x:Name="MainGrid21">
+
+                <Expander BackgroundColor="White"
+                          x:Name="SecondExpander">
+
+                    <Expander.Header>
+                        <Grid>
+
+                        </Grid>
+                    </Expander.Header>
+                    <Expander BackgroundColor="White"
+                              Tapped="OnTapSecondExpander">
+                        <Expander.Header>
+                            <Grid x:Name="MainGrid22">
+                                <Grid.RowDefinitions>
+
+                                    <RowDefinition Height="10*" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Grid x:Name="MainGrid23"
+                                      BackgroundColor="Black"
+                                      ColumnSpacing="-5"
+                                      Padding="0,0,0,10">
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="50" />
+
+
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+
+
+
+
+
+
+                                    </Grid.ColumnDefinitions>
+                                    <Grid x:Name="MainGrid24"
+                                          Grid.Column="0"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid25"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid26"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="273"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding currencyyparameter}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    <Grid x:Name="MainGrid27"
+                                          Grid.Column="1"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid28"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid29"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="273"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding MarketParameter}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    <Grid x:Name="MainGrid210"
+                                          Grid.Column="2"
+                                          Grid.Row="0">
+
+
+
+                                        <Grid x:Name="MainGrid211"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid212"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="273"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding Result}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    <Grid x:Name="MainGrid213"
+                                          Grid.Column="3"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid214"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid215"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="269"
+                                                       BackgroundColor="White"
+                                                       Text=""
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+                                </Grid>
+
+                                <Grid x:Name="MainGrid216"
+                                      BackgroundColor="White"
+                                      ColumnSpacing="-5"
+                                      Padding="0,-12,0,0"
+                                      Margin="0,38,0,0"
+                                      HeightRequest="100">
+
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="100" />
+
+
+
+                                    </Grid.RowDefinitions>
+
+                                    <Grid x:Name="MainGrid217"
+                                          Grid.Row="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+
+                                        </Grid.ColumnDefinitions>
+
+                                        <BoxView BackgroundColor="Black" />
+
+
+
+                                        <Grid x:Name="MainGrid218"
+                                              BackgroundColor="White"
+                                              Margin="2">
+                                            <Label Margin="0"
+                                                   WidthRequest="1064"
+                                                   BackgroundColor="White"
+                                                   HorizontalOptions="Center"
+                                                   HorizontalTextAlignment="Center" />
+                                        </Grid>
+
+
+
+
+
+                                        <Grid Grid.Column="0">
+                                            <Label Text="Get Price"
+                                                   TextColor="Black"
+                                                   Margin="2,2,0,0"
+                                                   WidthRequest="140"
+                                                   HeightRequest="25"
+                                                   BackgroundColor="#92D050"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="Start"
+                                                   x:Name="Frame2GetPrice" />
+
+                                        </Grid>
+
+
+
+                                        <Grid>
+
+                                            <ImageButton Margin="10"
+                                                         WidthRequest="30"
+                                                         HeightRequest="30"
+                                                         Source="expanderbutton.png"
+                                                         VerticalOptions="CenterAndExpand"
+                                                         HorizontalOptions="Start"
+                                                         Clicked="OnButton2Clicked"
+                                                         x:Name="button2" />
+
+
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                </Grid>
+                            </Grid>
+
+
+                        </Expander.Header>
+
+
+                    </Expander>
+
+
+                </Expander>
+            </Grid>
+
+            <Grid Margin="70,300,0,0"
+                  x:Name="MainGrid31">
+
+
+
+                <Expander BackgroundColor="White"
+                          x:Name="Expander3">
+                    <Expander.Header>
+                        <Grid>
+
+
+                        </Grid>
+
+
+                    </Expander.Header>
+                    <Expander BackgroundColor="White">
+                        <Expander.Header>
+
+                            <Grid x:Name="MainGrid32">
+                                <Grid.RowDefinitions>
+
+                                    <RowDefinition Height="10*" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Grid x:Name="MainGrid33"
+                                      BackgroundColor="Black"
+                                      ColumnSpacing="-5"
+                                      Padding="0,0,0,10">
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="50" />
+
+
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+
+
+
+
+
+
+                                    </Grid.ColumnDefinitions>
+                                    <Grid x:Name="MainGrid34"
+                                          Grid.Column="0"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid35"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="273"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding Message}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    <Grid x:Name="MainGrid36"
+                                          Grid.Column="1"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid37"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid38"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="273"
+                                                       BackgroundColor="#00B0F0"
+                                                       Text="{Binding MarketParameter}"
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    <Grid x:Name="MainGrid39"
+                                          Grid.Column="2"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid310"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid x:Name="MainGrid311"
+                                                  BackgroundColor="White"
+                                                  Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="273"
+                                                       BackgroundColor="White"
+                                                       Text=""
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                    <Grid Grid.Column="3"
+                                          Grid.Row="0">
+
+
+
+
+                                        <Grid x:Name="MainGrid312"
+                                              BackgroundColor="White">
+
+                                            <BoxView BackgroundColor="Black" />
+                                            <Grid  x:Name="MainGrid313"
+                                                   BackgroundColor="White"
+                                                   Margin="2">
+                                                <Label Margin="0"
+                                                       HeightRequest="300"
+                                                       WidthRequest="269"
+                                                       BackgroundColor="White"
+                                                       Text=""
+                                                       HorizontalOptions="Center"
+                                                       HorizontalTextAlignment="Center" />
+                                            </Grid>
+
+                                        </Grid>
+
+
+                                    </Grid>
+                                </Grid>
+
+                                <Grid x:Name="MainGrid314"
+                                      BackgroundColor="White"
+                                      ColumnSpacing="-5"
+                                      Padding="0,-12,0,0"
+                                      Margin="0,38,0,0"
+                                      HeightRequest="100">
+
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="100" />
+
+
+
+                                    </Grid.RowDefinitions>
+
+                                    <Grid x:Name="MainGrid315"
+                                          Grid.Row="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+
+                                        </Grid.ColumnDefinitions>
+
+                                        <BoxView BackgroundColor="Black" />
+
+
+
+                                        <Grid x:Name="MainGrid316"
+                                              BackgroundColor="White"
+                                              Margin="2">
+                                            <Label Margin="0"
+                                                   WidthRequest="1064"
+                                                   BackgroundColor="White"
+                                                   HorizontalOptions="Center"
+                                                   HorizontalTextAlignment="Center" />
+                                        </Grid>
+
+
+
+
+
+                                        <Grid Grid.Column="0">
+                                            <Label Text="Show Message"
+                                                   TextColor="Black"
+                                                   Margin="2,2,0,0"
+                                                   WidthRequest="140"
+                                                   HeightRequest="25"
+                                                   BackgroundColor="#92D050"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="Start"
+                                                   x:Name="Frame3Strategy" />
+
+                                        </Grid>
+
+
+
+                                        <Grid>
+
+                                            <ImageButton Margin="10"
+                                                         WidthRequest="30"
+                                                         HeightRequest="30"
+                                                         Source="expanderbutton.png"
+                                                         VerticalOptions="CenterAndExpand"
+                                                         HorizontalOptions="Start"
+                                                         Clicked="OnButton3Clicked"
+                                                         x:Name="button3" />
+
+
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                </Grid>
+
+                            </Grid>
+
+
+                        </Expander.Header>
+
+
+                    </Expander>
+
+                </Expander>
+
+
+
+
+            </Grid>
+
+            <Grid Margin="50,425,50,50">
+                
+
+                    
+                        
+                            
+
+                               
+                                  
+                                        <Expander x:Name="Expander4" BackgroundColor="White" IsExpanded="False">
+                                            <Expander.Header>
+
+                                                    <Grid>
+                            
+                                                    </Grid>
+
+                                            </Expander.Header>
+                                                <Expander>
+                                                       <Expander.Header>
+
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+
+                                    <RowDefinition Height="10*" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*" />
+
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="Black">
+
+
+                                </BoxView>
+                                <Grid BackgroundColor="White"
+                                      Margin="2">
+
+                                </Grid>
+
+                                <Grid BackgroundColor="White"
+                                      ColumnSpacing="-5"
+                                      Padding="0,-12,0,0"
+                                      Margin="0,38,0,0"
+                                      HeightRequest="100">
+
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="100" />
+
+
+
+                                    </Grid.RowDefinitions>
+
+                                    <Grid  Grid.Row="0">
+
+                                        <BoxView BackgroundColor="Black" />
+
+
+
+                                        <Grid BackgroundColor="White"
+                                              Margin="2">
+                                            <Label Margin="0"
+                                                   WidthRequest="1064"
+                                                   BackgroundColor="White"
+                                                   HorizontalOptions="Center"
+                                                   HorizontalTextAlignment="Center" />
+                                        </Grid>
+
+                                        <Grid Grid.Column="0">
+                                            <Label Text="End Strategy"
+                                                   TextColor="Black"
+                                                   Margin="2,2,0,0"
+                                                   WidthRequest="140"
+                                                   HeightRequest="25"
+                                                   BackgroundColor="#92D050"
+                                                   VerticalOptions="Start"
+                                                   HorizontalOptions="Start"
+                                                   x:Name="Frame4EndStrategy" />
+
+                                        </Grid>
+
+
+
+                                        <Grid>
+
+                                            <ImageButton Margin="10"
+                                                         WidthRequest="30"
+                                                         HeightRequest="30"
+                                                         Source="expanderbutton.png"
+                                                         VerticalOptions="CenterAndExpand"
+                                                         HorizontalOptions="Start"
+                                                         Clicked="OnButton4Clicked"
+                                                         x:Name="button4" />
+
+
+
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                </Grid>
+
+                            </Grid>
+                        </Expander.Header>
+
+                                                </Expander>     
+
+
+                </Expander>
+
+
+                               
+
+
+
+                           
+
+                        
+
+
+                    
+
+
+                
+            </Grid>
+
+
+
+
+
+        </Grid>
+
+    </ScrollView>
+</ContentPage>
+    
+    
